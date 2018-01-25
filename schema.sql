@@ -16,8 +16,6 @@ CREATE TABLE coverage
     event_name varchar(255),
     -- Date the event was held --
     event_date DATE,
-    -- Grabs a time in the HH:MM:SS format to be included in our URL queries --
-	vidtime TIME,
     -- Format refers to the tournament format --
     format varchar(255),
     -- Date of the Event that is being Covered --
@@ -26,10 +24,22 @@ CREATE TABLE coverage
     deck_colors varchar(255),
     -- User Submitted Deck Title --
     deck_name varchar(255),
-    
+    -- URL to Match Coverage --
+    coverage_link varchar(255),
+    -- Player in Seat One --
+    player_1_name varchar(255),
+    -- Player 1 Deck Name --
+    player_1_deck varchar(255),
+    -- Player in Seat Two --
+    player_2_name varchar(255),
+    -- Player 2 Deck Name --
+    player_2_deck,
+    -- Primary Key set to ID --
 	PRIMARY KEY (id)
 );
 
+-- Thoughts for maybe breaking out a table for each event with a foreign key --
+-- Table for players that holds the deck info?  --
 CREATE TABLE events
 (
     -- URL to Match Coverage --
