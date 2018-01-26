@@ -48,3 +48,13 @@ CREATE TABLE players
     -- Primary Key --
     PRIMARY KEY(round_number)
 );
+
+CREATE TABLE decks
+(
+   id int NOT NULL AUTO_INCREMENT,
+   -- Deck Name --
+   deck_name varchar(255),
+   -- Format --
+   format varchar(255),
+   PRIMARY KEY(deck_name)    
+);
