@@ -22,6 +22,6 @@ module.exports = function(sequelize, DataTypes) {
         });
     };
 
-    // return Rounds;
+    return Rounds;
 };
 
