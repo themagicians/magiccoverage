@@ -1,6 +1,7 @@
 
 var express = require("express");
 var bodyParser = require("body-parser");
+require('dotenv').config();
 
 
 var app = express();
@@ -21,8 +22,8 @@ app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
 
-require("./routes/api-routes.js")(app);
-require("./routes/handlebar-routes.js")(app);
+// require("./routes/api-routes.js")(app);
+// require("./routes/handlebar-routes.js")(app);
 
 
 db.sequelize.sync({ force: true }).then(function() {

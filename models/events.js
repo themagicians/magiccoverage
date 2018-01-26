@@ -28,6 +28,6 @@ module.exports = function(sequelize, DataTypes) {
         });
     };
 
-    // return Events;
+    return Events;
 };
 
