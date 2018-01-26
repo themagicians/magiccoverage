@@ -43,8 +43,8 @@ CREATE TABLE players
     round_number varchar(255),
     -- Player --
     player_name varchar(255),
-    -- Player --
-    player_deck varchar(255),
+    -- Player's Deck Archtype --
+    deck_name varchar(255),
     -- Primary Key --
     PRIMARY KEY(round_number)
 );
