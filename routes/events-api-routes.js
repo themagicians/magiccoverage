@@ -4,7 +4,9 @@ var router = express.Router();
 
 var db = require("../models");
 
+
 module.exports = function(app) {
+
 	app.get("/", function (req, res) {
 		db.Events.findAll({
 			include: [db.Rounds]
@@ -14,14 +16,6 @@ module.exports = function(app) {
 			};
 			console.log(hbsObject);
 			res.render("index", hbsObject);
-		});
-	});
-	
-	app.get("/api/events", function(req, res) {
-		db.Events.findAll({
-			include: [db.Rounds]
-		}).then(function(dbEvents) {
-			res.json(dbEvents);
 		});
 	});
 
@@ -54,6 +48,3 @@ module.exports = function(app) {
 	});
 
 };
-
-
-
