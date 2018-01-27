@@ -14,8 +14,10 @@ module.exports = function(app) {
 			var hbsObject = {
 				events: dbEvents
 			};
-			console.log(hbsObject.events);
-			res.render("index", hbsObject.events);
+
+			console.log(hbsObject);
+			res.render("layouts/main.handlebars", hbsObject);
+
 		});
 	});
 
