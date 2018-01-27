@@ -6,7 +6,8 @@ module.exports = function(sequelize, DataTypes) {
         },
         event_name: {
             type: DataTypes.STRING,
-            allowNull: false
+            allowNull: false,
+            foreignKey: true
         },
         coverage_link: {
             type: DataTypes.STRING,

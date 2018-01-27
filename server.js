@@ -22,8 +22,9 @@ app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
 
-require("./routes/events-api-routes.js")(app);
-require("./routes/rounds-api-routes.js")(app);
+var routes = require("./controllers/magic_controller.js");
+
+app.use("/", routes);
 
 db.sequelize.sync().then(function() {
   app.listen(PORT, function() {
