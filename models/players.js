@@ -3,7 +3,6 @@ module.exports = function(sequelize, DataTypes) {
         round_number: {
             type: DataTypes.STRING,
             allowNull: false,
-            primaryKey: true
         },
         player_name: {
             type: DataTypes.STRING,
@@ -13,6 +12,8 @@ module.exports = function(sequelize, DataTypes) {
             type: DataTypes.STRING,
             allowNull: false
         }
+    }, {
+        timestamps: false
     });
 
     return Players;
