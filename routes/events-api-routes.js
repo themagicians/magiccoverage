@@ -1,11 +1,15 @@
 var db = require("../models");
 
+
 module.exports = function(app) {
-	app.get("/api/events", function(req, res) {
+	app.get("/", function(req, res) {
 		db.Events.findAll({
 			include: [db.Rounds]
 		}).then(function(dbEvents) {
-			res.json(dbEvents);
+			var hbsObject = {
+				events: dbEvents
+			};
+			res.render("index2", hbsObject);
 		});
 	});
 
@@ -38,6 +42,3 @@ module.exports = function(app) {
 	});
 
 };
-
-
-
