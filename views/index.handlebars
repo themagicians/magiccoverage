@@ -1,14 +1,33 @@
- <script id="tableTemplate" type="text/x-handlebars-template">
-    <div class="jumbotron">
-        <!-- Information for the event that is not part of the table -->
-                <!-- Image for the sponsor of the tournament -->
-            <img src"{{ this.sponsorLogo }}">
-            <!-- eventTitle should be the same as eventName from form.hb -->
-            <h2>{{ this.eventName }}</h2>
-            <!-- format should be the same as eventFormat from form.hb -->
-            <h3>Format: {{ this.format }}</h3>
+        
+<script>
+    window.addEventListener("DOMContentLoaded", onLoad);
 
-        <div class="table-responsive">
+    function onLoad() {
+        var div = $("#outerContainer");
+        var compiledTemplate = Handlebars.compile($("eventTemplate").html);
+        Handlebars.registerPartial('table-partial', $('tablePartial').html);
+        div.html = compiledTemplate({results, window.Data});
+    }
+</script>
+
+<script id="eventTemplate" type="text/x-handlebars-template">
+    {{#each events}}
+        <div class="jumbotron" id="{{ ID }}">
+            <h2> {{event_name}} </h2> <br>
+            <h3> {{event_date}} </h3> <br>
+            <h3> {{format}} </h3> <br>
+
+            <div class="table-responsive">
+                {{> table-partial}}
+            </div>
+
+        </div> {{!-- end jumbotron --}}
+    {{/each}} {{!-- end #each events --}}
+
+
+</script>  <!-- end eventTemplate -->
+
+<script id="tablePartial" type="text/x-handlebars-template">
             
             <table class="table-hover">
                 <thead>
@@ -21,17 +40,16 @@
                     </tr>
                 </thead>
                 <tbody>
+                {{#each rounds}} 
                     <tr>
-                        <td><a href="{{ this.linkUrl }}"> <img src"{{ this.providerImg }}"> {{ link text }} </a></td>
-                        <td><a href="{{ this.player1url }}"> {{ this.player1 }} </a></td>
-                        <td><a href="{{ this.player2url }}"> {{ this.player2 }} </a></td>
-                        <td>{{ this.deck1 }}</td>
-                        <td>{{ this.deck2 }}</td>
+                        <td><a href="{{ coverage_link }}"> <img src"{{ providerImg }}"> {{ round_number }} </a></td>
+                        <td><a href="{{ player1url }}"> {{ player1 }} </a></td>
+                        <td><a href="{{ player2url }}"> {{ player2 }} </a></td>
+                        <td>{{ deck1 }}</td>
+                        <td>{{ deck2 }}</td>
                     </tr>
-
+                {{/each}}
                 </tbody>
 
             </table>  <!--end table-hover -->
-        </div>  <!-- end table-responsive  -->
-    </div>  <!-- end jumbotron  -->
-</script>
+</script>  <!-- end tablePartial -->
