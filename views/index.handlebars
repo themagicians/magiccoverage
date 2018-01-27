@@ -1,15 +1,7 @@
-
-    {{#each events}}
-        <div class="jumbotron" id="{{ ID }}">
-            <h2> {{event_name}} </h2> <br>
-            <h3> {{event_date}} </h3> <br>
-            <h3> {{format}} </h3> <br>
-
-            <div class="table-responsive">
-                {{> partials/table-partial}}
-            </div>
-
-        </div> {{!-- end jumbotron --}}
-    {{/each}} {{!-- end #each events --}}
+<div class="jumbotron" id="welcome"></div>
+<div id="charts"></div>
+<div id="search">
+    {{> partials/searchForm-partial}}
+</div>
 
 
