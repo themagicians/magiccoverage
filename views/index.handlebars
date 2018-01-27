@@ -1,16 +1,4 @@
-        
-<script>
-    window.addEventListener("DOMContentLoaded", onLoad);
 
-    function onLoad() {
-        var div = $("#outerContainer");
-        var compiledTemplate = Handlebars.compile($("eventTemplate").html);
-        Handlebars.registerPartial('table-partial', $('tablePartial').html);
-        div.html = compiledTemplate({results, window.Data});
-    }
-</script>
-
-<script id="eventTemplate" type="text/x-handlebars-template">
     {{#each events}}
         <div class="jumbotron" id="{{ ID }}">
             <h2> {{event_name}} </h2> <br>
@@ -18,38 +6,10 @@
             <h3> {{format}} </h3> <br>
 
             <div class="table-responsive">
-                {{> table-partial}}
+                {{> partials/table-partial}}
             </div>
 
         </div> {{!-- end jumbotron --}}
     {{/each}} {{!-- end #each events --}}
 
 
-</script>  <!-- end eventTemplate -->
-
-<script id="tablePartial" type="text/x-handlebars-template">
-            
-            <table class="table-hover">
-                <thead>
-                    <tr>
-                        <th>Link</th>
-                        <th>Player</th>
-                        <th>Player</th>
-                        <th>Deck</th>
-                        <th>Deck</th>
-                    </tr>
-                </thead>
-                <tbody>
-                {{#each rounds}} 
-                    <tr>
-                        <td><a href="{{ coverage_link }}"> <img src"{{ providerImg }}"> {{ round_number }} </a></td>
-                        <td><a href="{{ player1url }}"> {{ player1 }} </a></td>
-                        <td><a href="{{ player2url }}"> {{ player2 }} </a></td>
-                        <td>{{ deck1 }}</td>
-                        <td>{{ deck2 }}</td>
-                    </tr>
-                {{/each}}
-                </tbody>
-
-            </table>  <!--end table-hover -->
-</script>  <!-- end tablePartial -->

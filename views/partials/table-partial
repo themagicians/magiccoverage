@@ -1,0 +1,23 @@
+ <table class="table-hover">
+                <thead>
+                    <tr>
+                        <th>Link</th>
+                        <th>Player</th>
+                        <th>Player</th>
+                        <th>Deck</th>
+                        <th>Deck</th>
+                    </tr>
+                </thead>
+                <tbody>
+                {{#each rounds}} 
+                    <tr>
+                        <td><a href="{{ coverage_link }}"> <img src"{{ providerImg }}"> {{ round_number }} </a></td>
+                        <td><a href="{{ player1url }}"> {{ player1 }} </a></td>
+                        <td><a href="{{ player2url }}"> {{ player2 }} </a></td>
+                        <td>{{ deck1 }}</td>
+                        <td>{{ deck2 }}</td>
+                    </tr>
+                {{/each}}
+                </tbody>
+
+            </table>  <!--end table-hover -->
