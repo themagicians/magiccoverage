@@ -6,8 +6,23 @@ module.exports = function(sequelize, DataTypes) {
         },
         event_name: {
             type: DataTypes.STRING,
-            allowNull: false,
-            foreignKey: true
+            allowNull: false
+        },
+        player1_name: {
+            type: DataTypes.STRING,
+            allowNull: false
+        },
+        player2_name: {
+            type: DataTypes.STRING,
+            allowNull: false
+        },
+        player1_deck: {
+            type: DataTypes.STRING,
+            allowNull: false
+        },
+        player2_deck: {
+            type: DataTypes.STRING,
+            allowNull: false
         },
         coverage_link: {
             type: DataTypes.STRING,
