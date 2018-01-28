@@ -25,6 +25,8 @@ app.set("view engine", "handlebars");
 var routes = require("./controllers/magic_controller.js");
 
 app.use("/", routes);
+app.use("/create", routes);
+app.use("/rounds", routes);
 
 db.sequelize.sync().then(function() {
   app.listen(PORT, function() {
