@@ -4,10 +4,12 @@
         <meta charset="UTF-8">
         <title>Magic Coverage</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <link rel="stylesheet" href="/assets/css/styles.css" type="text/css" />
+        <link rel="stylesheet" href="../../public/assets/css/styles.css" type="text/css" />
         <script src="https://code.jquery.com/jquery.js"></script>
-        <script src="/assets/js/pageActions.js"></script>
-        <script src="/assets/js/formActions.js"></script>
+        <script src="../../public/assets/js/pageActions.js"></script>
+        <script src="../../public/assets/js/formActions.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.runtime.js"></script>
+        <script src="../../index.js"></script>
 
     </head>
 
@@ -15,7 +17,8 @@
         <div class="container" id="outerContainer">
 
             <div id="templateHole">
-                {{index.handlebars}}
+                <button class="btn btn-primary" id="toAddFormButton">Add an Event</button>
+                {{{body}}}
             </div> <!-- end templateHole -->
 
             <div class="footer">
