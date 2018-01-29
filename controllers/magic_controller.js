@@ -16,7 +16,6 @@ router.get("/events", function (req, res) {
 				events: dbEvents
 			};
 		console.log(hbsObject.events);
-		res.json(hbsObject);
 		res.render("index", hbsObject.events);
 	});
 });
