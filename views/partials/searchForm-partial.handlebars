@@ -3,12 +3,12 @@
     <form class = "addForm" action="/" method="POST">
         <div class = "form-group">
             <label for = "eventName">Event Name</label>
-            <input type = "text" id = "eventName" name="event_name">
+            <input type = "text" id = "eventName" name="events.event_name">
         </div> <!-- end eventName -->
 
         <div class = "form-group">
             <label for = "eventDate">Event Date</label>
-            <input type = "text" id = "eventDate" name="event_date">
+            <input type = "text" id = "eventDate" name="events.event_date">
         </div> <!-- end eventDate -->
 
         <div class = "form-group dropdown">
@@ -16,17 +16,17 @@
                 Event Format <span class="caret"></span>
             </button>
                 <ul class="dropdown-menu" aria-labelledby="formatButton">
-                    <li><a href="#" name = "format" value = "standard">Standard</a></li>
-                    <li><a href="#" name = "format" value = "modern">Modern</a></li>
-                    <li><a href="#" name = "format" value = "legacy">Legacy</a></li>
-                    <li><a href="#" name = "format" value = "vintage">Vintage</a></li>
-                    <li><a href="#" name = "format" value = "limited">Limited</a></li>
-                    <li><a href="#" name = "format" value = "block">Block</a></li>
-                    <li><a href="#" name = "format" value = "mixed">Mixed</a></li>
+                    <li><a href="#" name = "events.format" value = "standard">Standard</a></li>
+                    <li><a href="#" name = "events.format" value = "modern">Modern</a></li>
+                    <li><a href="#" name = "events.format" value = "legacy">Legacy</a></li>
+                    <li><a href="#" name = "events.format" value = "vintage">Vintage</a></li>
+                    <li><a href="#" name = "events.format" value = "limited">Limited</a></li>
+                    <li><a href="#" name = "events.format" value = "block">Block</a></li>
+                    <li><a href="#" name = "events.format" value = "mixed">Mixed</a></li>
                 </ul>
         </div> <!-- end format dropdown-->
 
-        <button class="" type = "submit">Search</button>
+        <button class="" type = "submit" id="searchButton">Search</button>
 
     </form> <!-- end addForm -->
 </div>  <!-- end jumbotron -->
