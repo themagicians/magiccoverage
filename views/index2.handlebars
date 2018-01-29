@@ -1,4 +1,4 @@
-<script id="tableTemplate" type="text/x-handlebars-template">
+{{!-- <script id="tableTemplate" type="text/x-handlebars-template">
     <div class="jumbotron">
         <!-- Information for the event that is not part of the table -->
                 <!-- Image for the sponsor of the tournament -->
@@ -34,4 +34,30 @@
             </table>  <!--end table-hover -->
         </div>  <!-- end table-responsive  -->
     </div>  <!-- end jumbotron  -->
-</script>
+</script> --}}
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 enter_section">
+            <h2>Add an Event</h2>
+            <form action="/events/create" method="POST">
+                <h3>Coverage Provider</h3>
+                <input type="text" class="form-control" name="coverage_provider" value="" id="enter_text">
+                <h3>Event Sponsor</h3>
+                <input type="text" class="form-control" name="event_sponsor" value="" id="enter_text">
+                <h3>Event Name</h3>
+                <input type="text" class="form-control" name="event_name" value="" id="enter_text">
+                <h3>Event Date</h3>
+                <input type="text" class="form-control" name="event_date" value="" id="enter_text">
+                <h3>Format</h3>
+                <input type="text" class="form-control" name="format" value="" id="enter_text">
+                <br><br>
+                <button type="submit" class="btn btn-primary" id="text-enter-button">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <p>Copyright 2018, The Magicians</p>
+</div>
