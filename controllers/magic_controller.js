@@ -15,9 +15,10 @@ router.get("/api/events", function(req, res) {
 	});
 });
 
-router.get("/form", function(req, res) {
-	res.render("addForm");
-})
+router.get("/event/form", function(req, res) {
+	res.render("eventForm");
+});
+
 
 router.get("/events", function (req, res) {
 	db.Events.findAll({
@@ -32,6 +33,19 @@ router.get("/events", function (req, res) {
 	});
 });
 
+router.get("/round/form", function (req, res) {
+	db.Events.findAll({
+		include: [db.Rounds]
+	}).then(function (dbEvents) {
+		var hbsObject = {
+				events: dbEvents
+			};
+
+		console.log(hbsObject);
+		res.render("roundForm", hbsObject);
+	});
+});
+
 router.post("/events/create", function(req, res) {
 	db.Events.create({
 		coverage_provider: req.body.coverage_provider,
@@ -42,7 +56,7 @@ router.post("/events/create", function(req, res) {
 	}).then(function(dbEvents) {
 		
 		console.log(dbEvents);
-		res.render("/addForm");
+		res.render("/event/form");
 	});
 });
 
@@ -60,7 +74,7 @@ router.post("/events/rounds", function(req, res) {
 	}).then(function(dbRounds) {
 		
 		console.log(dbRounds);
-		res.redirect("/");
+		res.redirect("/round/form");
 	});
 });
 
