@@ -1,9 +1,9 @@
 <div class="container" id="responseDiv">
     {{#each events}}
         <div class="jumbotron" id="{{ ID }}">
-            <h2> {{events.event_name}} </h2> <br>
-            <h3> {{events.event_date}} </h3> <br>
-            <h3> {{events.format}} </h3> <br>
+            <h2> {{this.event_name}} </h2> <br>
+            <h3> {{this.event_date}} </h3> <br>
+            <h3> {{this.format}} </h3> <br>
 
             <div class="table-responsive">
                 {{> table-partial}}
