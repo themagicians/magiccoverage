@@ -1,3 +1,5 @@
+// Contains Sample Data for the Database to be used with Sequelize-Fixtures
+
 var fixtures = [
     {
         "model": "Events",

@@ -33,8 +33,10 @@ db.sequelize.sync().then(function() {
     console.log("App listening on PORT " + PORT);
   });
 });
-var fixtures = require("./seed.js");
 
+// Variable to load in Database Sample Data
+var fixtures = require("./seed.js");
+// Command to populate database with initial data
 sequelize_fixtures.loadFixtures(fixtures, db).then(function(){
   console.log("Data Imported");
 });
