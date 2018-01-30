@@ -5,7 +5,7 @@ var router = express.Router();
 var db = require("../models");
 
 router.get("/", function(req, res) {
-	res.redirect("/events")
+	res.render("index");
 });
 
 // API Route to publish All Events
@@ -14,6 +14,10 @@ router.get("/api/events", function(req, res) {
 		res.json(dbEvents);
 	});
 });
+
+router.get("/form", function(req, res) {
+	res.render("addForm");
+})
 
 router.get("/events", function (req, res) {
 	db.Events.findAll({
@@ -38,7 +42,7 @@ router.post("/events/create", function(req, res) {
 	}).then(function(dbEvents) {
 		
 		console.log(dbEvents);
-		res.redirect("/");
+		res.render("/addForm");
 	});
 });
 
