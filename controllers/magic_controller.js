@@ -8,6 +8,13 @@ router.get("/", function(req, res) {
 	res.redirect("/events")
 });
 
+// API Route to publish All Events
+router.get("/api/events", function(req, res) {
+	db.Events.findAll({}).then(function(dbEvents){
+		res.json(dbEvents);
+	});
+});
+
 router.get("/events", function (req, res) {
 	db.Events.findAll({
 		include: [db.Rounds]
