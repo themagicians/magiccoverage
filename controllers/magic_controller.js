@@ -22,8 +22,9 @@ router.get("/events", function (req, res) {
 		var hbsObject = {
 				events: dbEvents
 			};
-		console.log(hbsObject.events);
-		res.render("addForm", hbsObject.events);
+
+		console.log(hbsObject);
+		res.render("queryResponse", hbsObject);
 	});
 });
 
