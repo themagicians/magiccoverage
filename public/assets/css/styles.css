@@ -2,3 +2,17 @@ body {
     background-color: #48210e;
     color: #efaa52;
 }
+
+.navbar {
+    height:75px;
+    background:black;
+    width:100%;
+    margin:0px auto;
+}
+
+img {
+	height:50px;
+}
+
+
+
