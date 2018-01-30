@@ -20,7 +20,8 @@ var fixtures = [
             "player2_name": "Jonathan Job",
             "player1_deck": "UR Prowess",
             "player2_deck": "Mono-Red Aggro",
-            "coverage_link": "https://www.twitch.tv/videos/159327959?t=0h13m19s"
+            "coverage_link": "https://www.twitch.tv/videos/159327959?t=0h13m19s",
+            "EventId": 1
         }
     },
     {
@@ -32,7 +33,8 @@ var fixtures = [
             "player2_name": "Stephen Bacala",
             "player1_deck": "WU Monument",
             "player2_deck": "GB Energy",
-            "coverage_link": "https://www.twitch.tv/videos/159327959?t=1h08m26s"
+            "coverage_link": "https://www.twitch.tv/videos/159327959?t=1h08m26s",
+            "EventId": 1
         }
     },
     {
@@ -44,7 +46,8 @@ var fixtures = [
             "player2_name": "Adam Bowman",
             "player1_deck": "Sultai Delirium",
             "player2_deck": "Mono-Block Zombies",
-            "coverage_link": "https://www.twitch.tv/videos/159327959?t=1h38m19s"
+            "coverage_link": "https://www.twitch.tv/videos/159327959?t=1h38m19s",
+            "EventId": 1
         }
     },
     {
@@ -56,7 +59,8 @@ var fixtures = [
             "player2_name": "Todd Stevens",
             "player1_deck": "GB Energy",
             "player2_deck": "5 Color Planeswalkers",
-            "coverage_link": "https://www.twitch.tv/videos/159327959?t=2h18m06s"
+            "coverage_link": "https://www.twitch.tv/videos/159327959?t=2h18m06s",
+            "EventId": 1
         }
     },
     {
@@ -68,7 +72,8 @@ var fixtures = [
             "player2_name": "Collins Mullen",
             "player1_deck": "Mardu Vehicles",
             "player2_deck": "Temur Emerge",
-            "coverage_link": "https://www.twitch.tv/videos/159327959?t=3h22m12s"
+            "coverage_link": "https://www.twitch.tv/videos/159327959?t=3h22m12s",
+            "EventId": 1
         }
     },{
         "model": "Rounds",
@@ -79,7 +84,8 @@ var fixtures = [
             "player2_name": "Alexander Conn",
             "player1_deck": "WU Monument",
             "player2_deck": "BW Zombies",
-            "coverage_link": "https://www.twitch.tv/videos/159327959?t=4h27m28s"
+            "coverage_link": "https://www.twitch.tv/videos/159327959?t=4h27m28s",
+            "EventId": 1
         }
     },{
         "model": "Rounds",
@@ -90,7 +96,8 @@ var fixtures = [
             "player2_name": "Forrest Kamperman",
             "player1_deck": "Sultai Seasons Past",
             "player2_deck": "Temur Emerge",
-            "coverage_link": "https://www.twitch.tv/videos/159327959?t=5h00m58s"
+            "coverage_link": "https://www.twitch.tv/videos/159327959?t=5h00m58s",
+            "EventId": 1
         }
     }
 ];
