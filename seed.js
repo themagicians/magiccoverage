@@ -75,7 +75,8 @@ var fixtures = [
             "coverage_link": "https://www.twitch.tv/videos/159327959?t=3h22m12s",
             "EventId": 1
         }
-    },{
+    },
+    {
         "model": "Rounds",
         "data": {
             "round_number": "Round 5",
@@ -87,7 +88,8 @@ var fixtures = [
             "coverage_link": "https://www.twitch.tv/videos/159327959?t=4h27m28s",
             "EventId": 1
         }
-    },{
+    },
+    {
         "model": "Rounds",
         "data": {
             "round_number": "Round 5(b)",
@@ -99,16 +101,38 @@ var fixtures = [
             "coverage_link": "https://www.twitch.tv/videos/159327959?t=5h00m58s",
             "EventId": 1
         }
-    },{
-            "model": "Events",
-            "data": {
-                "coverage_provider": "Twitch",
-                "event_sponsor": "Star City Games",
-                "event_name": "SCG Open: Atlanta",
-                "event_date": "2017-07-22",
-                "format": "Mixed"
-            }
+    },
+    {
+        "model": "Events",
+        "data": {
+            "coverage_provider": "Twitch",
+            "event_sponsor": "Star City Games",
+            "event_name": "SCG Open: Atlanta",
+            "event_date": "2017-07-22",
+            "format": "Mixed"
         }
+    },
+    {
+        "model": "Events",
+        "data": {
+            "coverage_provider": "Twitch",
+            "event_sponsor": "Wizards of the Coast",
+            "event_name": "Grand Prix Las Vegas 2017",
+            "event_date": "2017-07-15",
+            "format": "Legacy"
+        }
+    },
+    {
+        "model": "Events",
+        "data": {
+            "coverage_provider": "Twitch",
+            "event_sponsor": "Wizards of the Coast",
+            "event_name": "Grand Prix Las Vegas 2017",
+            "event_date": "2017-07-17",
+            "format": "Modern"
+        }
+    }
+    
 ];
 
 module.exports = fixtures;
