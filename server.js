@@ -2,7 +2,7 @@
 var express = require("express");
 var bodyParser = require("body-parser");
 require('dotenv').config();
-
+const sequelize_fixtures = require("sequelize-fixtures");
 
 var app = express();
 var PORT = process.env.PORT || 8080;
@@ -32,4 +32,11 @@ db.sequelize.sync().then(function() {
   app.listen(PORT, function() {
     console.log("App listening on PORT " + PORT);
   });
+});
+
+// Variable to load in Database Sample Data
+var fixtures = require("./seed.js");
+// Command to populate database with initial data
+sequelize_fixtures.loadFixtures(fixtures, db).then(function(){
+  console.log("Data Imported");
 });
