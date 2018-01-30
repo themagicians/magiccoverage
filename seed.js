@@ -99,7 +99,16 @@ var fixtures = [
             "coverage_link": "https://www.twitch.tv/videos/159327959?t=5h00m58s",
             "EventId": 1
         }
-    }
+    },{
+            "model": "Events",
+            "data": {
+                "coverage_provider": "Twitch",
+                "event_sponsor": "Star City Games",
+                "event_name": "SCG Open: Atlanta",
+                "event_date": "2017-07-22",
+                "format": "Mixed"
+            }
+        }
 ];
 
 module.exports = fixtures;

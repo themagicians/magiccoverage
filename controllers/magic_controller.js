@@ -20,8 +20,9 @@ router.get("/events", function (req, res) {
 		include: [db.Rounds]
 	}).then(function (dbEvents) {
 		var hbsObject = {
-				events: dbEvents
+				events: dbEvents.events.event_name
 			};
+
 		console.log(hbsObject.events);
 		res.render("addForm", hbsObject.events);
 	});
