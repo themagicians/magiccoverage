@@ -11,9 +11,9 @@
                 <tbody>
                 {{#each this.Rounds}} 
                     <tr>
-                        <td><a href="{{ this.coverage_link }}"> <img src"{{ providerImg }}"> {{ this.round_number }} </a></td>
-                        <td><a href="{{ player1url }}"> {{ this.player1_name }} </a></td>
-                        <td><a href="{{ player2url }}"> {{ this.player2_name }} </a></td>
+                        <td><a href="{{ this.coverage_link }}"> {{ this.round_number }} </a></td>
+                        <td>{{ this.player1_name }} </td>
+                        <td>{{ this.player2_name }} </td>
                         <td>{{ player1_deck }}</td>
                         <td>{{ player2_deck }}</td>
                     </tr>
