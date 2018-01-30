@@ -48,12 +48,19 @@
                             <option>YouTube</option>
                         </select>
                 </div>
-                <label>Event Sponsor</label>
-                    <input type="text" class="form-control" name="event_sponsor" value="" id="enter_text">
+                <div class="form-group">
+                    <label for="coverageProvider">Event Sponsor</label>
+                        <select class="form-control" name="event_sponsor">
+                            <option>Star City Games</option>
+                            <option>Wizards of the Coast</option>
+                        </select>
+                </div>
                 <label>Event Name</label>
                     <input type="text" class="form-control" name="event_name" value="" id="enter_text">
-                <label>Event Date</label>
-                    <input type="text" class="form-control" name="event_date" value="" id="enter_text">
+                <div class="form-group">
+                    <label>Date</label>
+                    <input class="form-control" name="event_date" placeholder="MM/DD/YYYY" type="text"/>
+                </div>
                 <div class="form-group">
                     <label for="format">Format</label>
                         <select class="form-control" name="format">
@@ -65,8 +72,7 @@
                             <option>Block</option>
                             <option>Mixed</option>
                         </select>
-                </div>
-                <br><br>
+                </div>              
                 <button type="submit" class="btn btn-primary" id="text-enter-button">Submit</button>
             </form>
         </div>
