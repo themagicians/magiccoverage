@@ -41,16 +41,31 @@
         <div class="col-xs-12 enter_section">
             <h2>Add an Event</h2>
             <form action="/events/create" method="POST">
-                <label>Coverage Provider</label>
-                    <input type="text" class="form-control" name="coverage_provider" value="" id="enter_text">
+                <div class="form-group">
+                    <label for="coverageProvider">Coverage Provider</label>
+                        <select class="form-control" name="coverage_provider">
+                            <option>Twitch</option>
+                            <option>YouTube</option>
+                        </select>
+                </div>
                 <label>Event Sponsor</label>
                     <input type="text" class="form-control" name="event_sponsor" value="" id="enter_text">
                 <label>Event Name</label>
                     <input type="text" class="form-control" name="event_name" value="" id="enter_text">
                 <label>Event Date</label>
                     <input type="text" class="form-control" name="event_date" value="" id="enter_text">
-                <label>Format</label>
-                    <input type="text" class="form-control" name="format" value="" id="enter_text">
+                <div class="form-group">
+                    <label for="format">Format</label>
+                        <select class="form-control" name="format">
+                            <option>Standard</option>
+                            <option>Modern</option>
+                            <option>Legacy</option>
+                            <option>Vintage</option>
+                            <option>Limited</option>
+                            <option>Block</option>
+                            <option>Mixed</option>
+                        </select>
+                </div>
                 <br><br>
                 <button type="submit" class="btn btn-primary" id="text-enter-button">Submit</button>
             </form>
