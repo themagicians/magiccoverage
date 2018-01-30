@@ -1,11 +1,11 @@
-d3.json('js/data/players3.json', function(error, json) {
-var players = json.list;
-console.log(players);
+d3.json('/assets/d3/js/data/players3.json', function(error, json) {
+  var players = json.list;
+  console.log(players);
 
   //set margin variables
   var margin = { top: 0, right: 0, bottom: 20, left: 20 },
-      height = 200 - margin.top - margin.bottom,
-      width = 300 - margin.left - margin.right
+      height = 300 - margin.top - margin.bottom,
+      width = 400 - margin.left - margin.right
       
   // sort players   
   players.sort(function(a, b) {

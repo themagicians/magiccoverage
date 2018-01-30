@@ -58,7 +58,13 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="dropdown nav-bar right">
+        <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Add an event with rounds</a>
+      </li>
+        <li class="dropdown navbar-right">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Format <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="#">Standard</a></li>
@@ -86,7 +92,8 @@
 
     <div> {{{ body }}}</div>
        
-
+    <script src="../assets/d3/js/libraries/d3/d3.min.js"></script>
+    <script src="../assets/d3/js/script.js"></script>
         {{!-- Add in jQuery --}}
         <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
        
