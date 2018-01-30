@@ -75,7 +75,8 @@ var fixtures = [
             "coverage_link": "https://www.twitch.tv/videos/159327959?t=3h22m12s",
             "EventId": 1
         }
-    },{
+    },
+    {
         "model": "Rounds",
         "data": {
             "round_number": "Round 5",
@@ -87,7 +88,8 @@ var fixtures = [
             "coverage_link": "https://www.twitch.tv/videos/159327959?t=4h27m28s",
             "EventId": 1
         }
-    },{
+    },
+    {
         "model": "Rounds",
         "data": {
             "round_number": "Round 5(b)",
@@ -99,16 +101,116 @@ var fixtures = [
             "coverage_link": "https://www.twitch.tv/videos/159327959?t=5h00m58s",
             "EventId": 1
         }
-    },{
-            "model": "Events",
-            "data": {
-                "coverage_provider": "Twitch",
-                "event_sponsor": "Star City Games",
-                "event_name": "SCG Open: Atlanta",
-                "event_date": "2017-07-22",
-                "format": "Mixed"
-            }
+    },
+    {
+        "model": "Events",
+        "data": {
+            "coverage_provider": "Twitch",
+            "event_sponsor": "Star City Games",
+            "event_name": "SCG Open: Atlanta",
+            "event_date": "2017-07-22",
+            "format": "Mixed"
         }
+    },
+    {
+        "model": "Events",
+        "data": {
+            "coverage_provider": "Twitch",
+            "event_sponsor": "Wizards of the Coast",
+            "event_name": "Grand Prix Las Vegas 2017",
+            "event_date": "2017-07-15",
+            "format": "Legacy"
+        }
+    },
+    {
+        "model": "Events",
+        "data": {
+            "coverage_provider": "Twitch",
+            "event_sponsor": "Wizards of the Coast",
+            "event_name": "Grand Prix Las Vegas 2017",
+            "event_date": "2017-07-17",
+            "format": "Modern"
+        }
+    },
+    {
+        "model": "Rounds",
+        "data": {
+            "round_number": "Round 4",
+            "event_name": "Grand Prix Las Vegas 2017",
+            "player1_name": "Christopher McCord",
+            "player2_name": "Nathan Smith",
+            "player1_deck": "Dredge",
+            "player2_deck": "Sneak and Show",
+            "coverage_link": "https://www.twitch.tv/videos/152113588?t=0h00m00s",
+            "EventId": 3
+        }
+    },
+    {
+        "model": "Rounds",
+        "data": {
+            "round_number": "Round 1",
+            "event_name": "Grand Prix Las Vegas 2017",
+            "player1_name": "Dana Fischer",
+            "player2_name": "Phillip Cox",
+            "player1_deck": "Elves",
+            "player2_deck": "Burn",
+            "coverage_link": "https://www.twitch.tv/videos/152498517?t=0h44m50s",
+            "EventId": 4
+        }
+    },
+    {
+        "model": "Rounds",
+        "data": {
+            "round_number": "Round 1(b)",
+            "event_name": "Grand Prix Las Vegas 2017",
+            "player1_name": "Ian Crow",
+            "player2_name": "Maria Bartholdi",
+            "player1_deck": "Ad Nauseaum",
+            "player2_deck": "Boggles",
+            "coverage_link": "https://www.twitch.tv/videos/152498517?t=1h20m16s",
+            "EventId": 4
+        }
+    },
+    {
+        "model": "Rounds",
+        "data": {
+            "round_number": "Round 1",
+            "event_name": "SCG Open: Atlanta",
+            "player1_name": "Jones-Patel-Henry",
+            "player2_name": "Phillips-Kastel-Lebedowicz",
+            "player1_deck": "Sultai Control - Grixis Shadow - 4 Color Control",
+            "player2_deck": "Death & Taxes - Abzan - 5 Color Planeswalkers",
+            "coverage_link": "https://www.twitch.tv/videos/161115120?t=0h18m58s",
+            "EventId": 2
+        }
+    },
+    {
+        "model": "Rounds",
+        "data": {
+            "round_number": "Round 5",
+            "event_name": "Grand Prix Las Vegas 2017",
+            "player1_name": "Reid Duke",
+            "player2_name": "Matt Nass",
+            "player1_deck": "Elves",
+            "player2_deck": "Storm Combo",
+            "coverage_link": "https://www.twitch.tv/videos/152114515?t=0h04m52s",
+            "EventId": 3
+        }
+    },
+    {
+        "model": "Rounds",
+        "data": {
+            "round_number": "Round 2",
+            "event_name": "SCG Open: Atlanta",
+            "player1_name": "Keith - Stevens - Ross",
+            "player2_name": "Barich - Handy - Klomparens",
+            "player1_deck": "Lands - GW Company - Mono-Red Aggro",
+            "player2_deck": "Infect - Lantern Control - WU Monument",
+            "coverage_link": "https://www.twitch.tv/videos/161128028?t=0h07m41s",
+            "EventId": 2
+        }
+    }
+    
 ];
 
 module.exports = fixtures;
