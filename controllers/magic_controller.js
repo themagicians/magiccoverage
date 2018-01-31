@@ -22,7 +22,8 @@ router.get("/event/form", function(req, res) {
 
 router.get("/events", function (req, res) {
 	db.Events.findAll({
-		include: [db.Rounds]
+		include: [db.Rounds],
+		order: [[ db.Rounds, "round_number" ]]
 	}).then(function (dbEvents) {
 		var hbsObject = {
 				events: dbEvents
@@ -41,7 +42,6 @@ router.get("/round/form", function (req, res) {
 				events: dbEvents
 			};
 
-		console.log(hbsObject);
 		res.render("roundForm", hbsObject);
 	});
 });
@@ -55,7 +55,6 @@ router.post("/events/create", function(req, res) {
 		format: req.body.format
 	}).then(function(dbEvents) {
 		
-		console.log(dbEvents);
 		res.render("/event/form");
 	});
 });
@@ -63,7 +62,6 @@ router.post("/events/create", function(req, res) {
 router.post("/events/rounds", function(req, res) {
 	db.Rounds.create({
 		round_number: req.body.round_number,
-		event_name: req.body.event_name,
 		player1_name: req.body.player1_name,
 		player2_name: req.body.player2_name,
 		player1_deck: req.body.player1_deck,

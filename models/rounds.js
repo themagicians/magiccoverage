@@ -4,10 +4,6 @@ module.exports = function(sequelize, DataTypes) {
             type: DataTypes.STRING,
             allowNull: false
         },
-        event_name: {
-            type: DataTypes.STRING,
-            allowNull: false
-        },
         player1_name: {
             type: DataTypes.STRING,
             allowNull: false
