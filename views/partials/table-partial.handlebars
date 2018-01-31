@@ -1,14 +1,22 @@
- <table class="table-hover">
-                <thead>
-                    <tr>
-                        <th>Link</th>
-                        <th>Player</th>
-                        <th>Player</th>
-                        <th>Deck</th>
-                        <th>Deck</th>
-                    </tr>
-                </thead>
-                <tbody>
+ 
+<a class="btn btn-primary" data-toggle="collapse" href="#matchups" role="button" aria-expanded="false" aria-controls="matchups">
+    Click to Expand +
+  </a>
+
+<div class="collapse" id="matchups">
+    <div class="card card-body">
+        <table class="table-hover">
+            <thead>
+                <tr>
+                    <th>Link</th>
+                    <th>Player</th>                      
+                    <th>Player</th>
+                    <th>Deck</th>
+                    <th>Deck</th>
+                </tr>
+            </thead>
+            
+            <tbody>
                 {{#each this.Rounds}} 
                     <tr>
                         <td><a href="{{ this.coverage_link }}"> {{ this.round_number }} </a></td>
@@ -18,6 +26,7 @@
                         <td>{{ player2_deck }}</td>
                     </tr>
                 {{/each}}
-                </tbody>
-
-            </table>  <!--end table-hover -->
+            </tbody>
+        </table>
+    </div>
+</div>
