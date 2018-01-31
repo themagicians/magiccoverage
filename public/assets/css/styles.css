@@ -8,11 +8,19 @@ body {
     background:black;
     width:100%;
     margin:0px auto;
-    border-color: red #bf0000 #bf0000 red;
+    border-color: #5F89D1;
+    border-width: 1px;
 }
 
 .nav.navbar-nav li a {
-    color: #bf0000;
+    color: white;
+    padding-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    padding-top: 5px;
 }
 
 
@@ -54,6 +62,7 @@ td a {
 #expandButton {
     background-color: #5F89D1;
     border-color: #48210e;
+    color: whitesmoke;
 }
 
 .form-control {
@@ -61,6 +70,11 @@ td a {
     font-weight: bold;
     color: #5F89D1;
     background-color: whitesmoke;
+}
+
+#dropdown {
+    color: black;
+    padding-top: 10px;
 }
 
 .footer {
