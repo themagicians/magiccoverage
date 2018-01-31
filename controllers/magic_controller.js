@@ -41,7 +41,6 @@ router.get("/round/form", function (req, res) {
 				events: dbEvents
 			};
 
-		console.log(hbsObject);
 		res.render("roundForm", hbsObject);
 	});
 });
@@ -55,7 +54,6 @@ router.post("/events/create", function(req, res) {
 		format: req.body.format
 	}).then(function(dbEvents) {
 		
-		console.log(dbEvents);
 		res.render("/event/form");
 	});
 });

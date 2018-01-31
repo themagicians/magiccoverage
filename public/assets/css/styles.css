@@ -51,6 +51,11 @@ td a {
     color: #bf0000;
 }
 
+#expandButton {
+    background-color: #5F89D1;
+    border-color: #48210e;
+}
+
 .footer {
     text-align: center;
 }
