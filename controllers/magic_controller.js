@@ -63,7 +63,6 @@ router.post("/events/create", function(req, res) {
 router.post("/events/rounds", function(req, res) {
 	db.Rounds.create({
 		round_number: req.body.round_number,
-		event_name: req.body.event_name,
 		player1_name: req.body.player1_name,
 		player2_name: req.body.player2_name,
 		player1_deck: req.body.player1_deck,
