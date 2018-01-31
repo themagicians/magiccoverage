@@ -7,20 +7,44 @@ body {
     height:75px;
     background:black;
     width:100%;
-    margin:0px auto;
+    margin:1px auto;
+    border-color: #bf0000;
 }
+
+.nav.navbar-nav li a {
+    color: #bf0000;
+}
+
 
 img {
 	height:50px;
 }
 
-.chart{
-    color: white;
-    font-size: 20px;
-    text-align: left;
+.jumbotron {
+    background-color: blanchedalmond;
 }
 
+#welcome {
+    margin-top: 3%;
+    text-align: center;
+}
 
+.charts {
+    height: 250px;
+    background-color: bisque;
+    margin: 10px 0px 10px 0px;
+    border-radius: 10px; 
+    float: left;  
+}
 
+td, th {
+    padding: 8px;
+}
 
+td a {
+    color: #bf0000;
+}
 
+.footer {
+    text-align: center;
+}
