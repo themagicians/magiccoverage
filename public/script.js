@@ -1,4 +1,4 @@
-d3.json('/assets/d3/js/data/players3.json', function(error, json) {
+d3.json('/assets/js/data/players3.json', function(error, json) {
   var players = json.list;
   console.log(players);
 
@@ -64,7 +64,7 @@ d3.json('/assets/d3/js/data/players3.json', function(error, json) {
     .style('opacity', 0)
 
   //create chart
-  myChart = d3.select('#chart1')
+  myChart = d3.select('#charts1')
     .append('svg')
     .attr('width', width + margin.left + margin.right)
     .attr('height', height + margin.top + margin.bottom)
@@ -101,7 +101,7 @@ d3.json('/assets/d3/js/data/players3.json', function(error, json) {
         
         tempColor = this.style.fill;
         d3.select(this)
-          .style('fill', '#6689bf')
+          .style('fill', '#efaa52')
       })
 
       // //mouseout
@@ -111,9 +111,13 @@ d3.json('/assets/d3/js/data/players3.json', function(error, json) {
           .style('fill', tempColor)
       })
 
-    yGuide = d3.select('#chart1 svg').append('g')
+    yGuide = d3.select('#charts1 svg').append('g')
               .attr('transform', 'translate(20,0)')
-              .call(yAxisTicks)
+              .call(yAxisTicks)   
+              .styles({
+                "border":"1px",
+               "border-style":"solid",
+               "border-color":"#f00"})
 
     myChart.transition()
     .attr('height', function(individualPlayer) {
