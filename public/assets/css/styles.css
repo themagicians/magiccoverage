@@ -41,6 +41,12 @@ td, th {
     padding: 8px;
 }
 
+.chart{
+    color: white;
+    font-size: 20px;
+    text-align: left;
+}
+
 td a {
     color: #bf0000;
 }

@@ -60,40 +60,39 @@
                         </div>  
                         <div class="form-group">
                             <label>Event Name</label>
-                            <input type="text" class="form-control" name="event_name" placeholder="Grab Event Name from List Above" value="" id="enter_text">
+                            <input type="text" class="form-control" name="event_name" placeholder="Grab Event Name from List Above" value="" id="event_name">
                         </div>
                         <div class="form-group">
-                            <label for="EventId">Event ID</label>
-                            <select class="form-control" name="EventId" placeholder="Select Event ID">
+                            <label>Event ID</label>
+                                <select class="form-control" name="EventId">
                                 {{#each events}}
-                                <option> {{ this.id }} {{ this.event_name }} </option>
+                                    <option value="{{this.id}}">{{ this.id }} - {{this.event_name}}</option>
                                 {{/each}}
-                            </select>
-                        </div>
+                                </select>
                         </div>
                         <div class="form-group">
                             <label>Coverage Link</label>
-                            <input type="text" class="form-control" name="coverage_link" value="" id="enter_text">
+                            <input type="text" class="form-control" name="coverage_link" value="" id="coverage_link">
                         </div>  
                         <h3>Player 1</h3>
                         <div class="form-group">
                             <label>Name</label>
-                            <input type="text" class="form-control" name="player1_name" value="" id="enter_text">
+                            <input type="text" class="form-control" name="player1_name" value="" id="player1_name">
                         </div>
                         <div class="form-group">
                             <label>Deck</label>
-                            <input type="text" class="form-control" name="player1_deck" value="" id="enter_text">
+                            <input type="text" class="form-control" name="player1_deck" value="" id="player1_deck">
                         </div>
                         <h3>Player 2</h3>
                         <div class="form-group">
                             <label>Name</label>
-                            <input type="text" class="form-control" name="player2_name" value="" id="enter_text">
+                            <input type="text" class="form-control" name="player2_name" value="" id="player2_name">
                         </div>
                         <div class="form-group">
                             <label>Deck</label>
-                            <input type="text" class="form-control" name="player2_deck" value="" id="enter_text">
+                            <input type="text" class="form-control" name="player2_deck" value="" id="player2_deck">
                         </div>        
-                        <button type="submit" class="btn btn-primary" id="text-enter-button">Submit</button>
+                        <button type="submit" class="btn btn-primary" id="submitbutton">Submit</button>
                     </form>
                 </div>
             </div>
