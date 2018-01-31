@@ -1,31 +1,32 @@
-
-<div class="container">
+<br><br>
+<div class="container" id="responseDiv">
+	<div class="jumbotron">
             <div class="row">
                 <div class="col-xs-12 enter_section">
-                    <h2>Add an Event</h2>
+                    <h2><b>Event Form</b></h2><hr>
                     <form action="/events/create" method="POST">
                         <div class="form-group">
-                            <label for="coverageProvider">Coverage Provider</label>
+                            <label for="coverageProvider"><h4><b>Coverage Provider</h4></b></label>
                                 <select class="form-control" name="coverage_provider">
                                     <option>Twitch</option>
                                     <option>YouTube</option>
                                 </select>
                         </div>
                         <div class="form-group">
-                            <label for="eventSponsor">Event Sponsor</label>
+                            <label for="eventSponsor"><h4><b>Event Sponsor</h4></b></label>
                                 <select class="form-control" name="event_sponsor">
                                     <option>Star City Games</option>
                                     <option>Wizards of the Coast</option>
                                 </select>
                         </div>
-                        <label>Event Name</label>
+                        <label><h4><b>Event Name</h4></b></label>
                             <input type="text" class="form-control" name="event_name" value="" id="enter_text">
                         <div class="form-group">
-                            <label>Date</label>
+                            <label><h4><b>Date</h4></b></label>
                             <input class="form-control" name="event_date" placeholder="MM/DD/YYYY" type="text"/>
                         </div>
                         <div class="form-group">
-                            <label for="format">Format</label>
+                            <label for="format"><h4><b>Format</h4></b></label>
                                 <select class="form-control" name="format">
                                     <option>Standard</option>
                                     <option>Modern</option>
@@ -35,9 +36,11 @@
                                     <option>Block</option>
                                     <option>Mixed</option>
                                 </select>
-                        </div>              
-                        <button type="submit" class="btn btn-primary" id="text-enter-button">Submit</button>
+                        </div>   
+                   		<br>           
+                        <button type="submit" class="btn btn-primary" id="expandButton">Submit</button>
                     </form>
                 </div>
             </div>
+        </div>
         </div>

@@ -56,6 +56,13 @@ td a {
     border-color: #48210e;
 }
 
+.form-control {
+    font-size: 17px;
+    font-weight: bold;
+    color: #5F89D1;
+    background-color: whitesmoke;
+}
+
 .footer {
     text-align: center;
 }
