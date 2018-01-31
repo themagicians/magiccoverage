@@ -22,7 +22,8 @@ router.get("/event/form", function(req, res) {
 
 router.get("/events", function (req, res) {
 	db.Events.findAll({
-		include: [db.Rounds]
+		include: [db.Rounds],
+		order: [[ db.Rounds, "round_number" ]]
 	}).then(function (dbEvents) {
 		var hbsObject = {
 				events: dbEvents

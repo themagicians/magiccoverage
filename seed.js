@@ -196,6 +196,18 @@ var fixtures = [
             "coverage_link": "https://www.twitch.tv/videos/161128028?t=0h07m41s",
             "EventId": 2
         }
+    },
+    {
+        "model": "Rounds",
+        "data": {
+            "round_number": "1",
+            "player1_name": "Reid Duke",
+            "player2_name": "Matt Nass",
+            "player1_deck": "Elves",
+            "player2_deck": "Storm Combo",
+            "coverage_link": "https://www.twitch.tv/videos/152114515?t=0h04m52s",
+            "EventId": 3
+        }
     }
     
 ];
