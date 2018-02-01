@@ -34,17 +34,15 @@ img {
 #homeLink, #eventsLink, #createButton:visited {
     color: blanchedalmond;
 }
-/*
-#homeLink, #eventsLink, #createButton:hover {
-    color: #bf0000;
 
-}  MY GOAL IS TO GET THESE WORKING PROPERLY!
+ul.nav a:hover {
+    color: #bf0000 !important;
 
-#createButton:active {
-    background-color: black;
-    color: blanchedalmond;
 }
-*/
+
+#createButton:focus {
+    color: #07889b;
+}
 
 .jumbotron {
     background-color: blanchedalmond;
@@ -59,14 +57,21 @@ td, th {
     padding: 10px;
 }
 
+td a {
+    color: #bf0000;
+}
+
 .chart{
-    color: white;
+    color: whitesmoke;
     font-size: 20px;
     align: center;
 }
 
-td a {
-    color: #bf0000;
+#twitterFeed {
+    float: right;
+    background-color: blanchedalmond;
+    height: 250px;
+    border-radius: 15px;
 }
 
 .tealButton {
@@ -87,7 +92,6 @@ td a {
     background-color: whitesmoke;
 }
 
-
 .dropdown-menu {
     background-color: blanchedalmond;
 }
@@ -100,4 +104,8 @@ td a {
 
 .footer {
     text-align: center;
+    font-weight: bold;
+}
+.footerRow {
+    margin: auto;
 }
