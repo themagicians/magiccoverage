@@ -64,7 +64,7 @@ d3.json('/assets/js/data/players4.json', function(error, json) {
     .style('opacity', 0)
 
   //create chart
-  myChart = d3.select('#charts1')
+  myChart = d3.select('#charts2')
     .append('svg')
     .attr('width', width + margin.left + margin.right)
     .attr('height', height + margin.top + margin.bottom)
@@ -111,7 +111,7 @@ d3.json('/assets/js/data/players4.json', function(error, json) {
           .style('fill', tempColor)
       })
 
-    yGuide = d3.select('#charts1 svg').append('g')
+    yGuide = d3.select('#charts2 svg').append('g')
               .attr('transform', 'translate(20,0)')
               .call(yAxisTicks)   
               .style("stroke", "#efefef");
