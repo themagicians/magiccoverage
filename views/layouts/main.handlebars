@@ -32,16 +32,16 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="/"><img src="/assets/img/png/MTG_Blue_Home.png" class="manaNavLink"></a>
+                    <a class="nav-link" href="/">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/events"><img src="/assets/img/png/MTG_Red_Events.png" class="manaNavLink"></a>
+                    <a class="nav-link" href="/events">Events</a>
                 </li>
                 <li class="dropdown navbar-right">
-                    <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="/assets/img/png/MTG_Green_Create.png" class="manaNavLink"><span class="caret"></span></a>
+                    <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Create<span class="caret"></span></a>
             <ul class="dropdown-menu">
-                <li><a href="/event/form" class="brownLink" id="dropdown">Create Event</a></li>
-                <li><a href="/round/form" class="brownLink" id="dropdown">Create Rounds</a></li>
+                <li><a href="/event/form" id="dropdown">Create Event</a></li>
+                <li><a href="/round/form" id="dropdown">Create Rounds</a></li>
             </ul>
                 </li>
 {{!--         <li class="dropdown navbar-right">
@@ -62,7 +62,7 @@
         <div class="form-group">
           <input type="text" class="form-control" placeholder="Event Name" id="searchField">
         </div>
-        <button type="submit" id="expandButton" class="btn btn-default">Search</button>
+        <button type="submit" id="expandButton" class="btn srchExpndButton">Search</button>
       </form>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
