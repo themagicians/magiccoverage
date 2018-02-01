@@ -57,14 +57,21 @@ td, th {
     padding: 10px;
 }
 
+td a {
+    color: #bf0000;
+}
+
 .chart{
-    color: white;
+    color: whitesmoke;
     font-size: 20px;
     align: center;
 }
 
-td a {
-    color: #bf0000;
+#twitterFeed {
+    float: right;
+    background-color: blanchedalmond;
+    height: 250px;
+    border-radius: 15px;
 }
 
 .tealButton {
@@ -97,4 +104,8 @@ td a {
 
 .footer {
     text-align: center;
+    font-weight: bold;
+}
+.footerRow {
+    margin: auto;
 }
