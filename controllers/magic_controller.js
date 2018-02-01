@@ -41,7 +41,6 @@ router.get("/round/form", function (req, res) {
 		var hbsObject = {
 				events: dbEvents
 			};
-
 		res.render("roundForm", hbsObject);
 	});
 });
@@ -68,7 +67,6 @@ router.post("/events/rounds", function(req, res) {
 		player2_deck: req.body.player2_deck,
 		coverage_link: req.body.coverage_link,
 		EventId: req.body.EventId
-		//GOING TO NEED/OR SEE THE ID OF EVENT SO THEY CAN MATCH UP......ONLY IF WE CAN'T MAKE THESE INTO ONE POST/CREATION
 	}).then(function(dbRounds) {
 		
 		console.log(dbRounds);

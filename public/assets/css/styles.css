@@ -8,13 +8,13 @@ body {
     background:black;
     width:100%;
     margin:0px auto;
-    border-color: black black #5F89D1 black;
-    border-bottom-width: 1px;
+    border-color: #bf0000 black #5F89D1 black; /*first border color is red I liked*/
+    border-bottom-width: 3px;
 }
 
 .nav.navbar-nav li a {
     color: white;
-    padding-top: 20px;
+    padding-top: 10px;
     font-size: 18px;
     font-weight: bold;
 }
@@ -22,7 +22,6 @@ body {
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
     padding-top: 5px;
 }
-
 
 img {
 	height:50px;
@@ -35,14 +34,6 @@ img {
 #welcome {
     margin-top: 3%;
     text-align: center;
-}
-
-.charts {
-    height: 250px;
-    background-color: bisque;
-    margin: 10px 0px 10px 0px;
-    border-radius: 10px; 
-    float: left;  
 }
 
 td, th {
