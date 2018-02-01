@@ -8,7 +8,7 @@ body {
     background:black;
     width:100%;
     margin:0px auto;
-    border-color: black black #5F89D1 black;
+    border-color: #bf0000 black #5F89D1 black; /*first border color is red I liked*/
     border-bottom-width: 3px;
 }
 
@@ -23,7 +23,6 @@ body {
     padding-top: 5px;
 }
 
-
 img {
 	height:50px;
 }
@@ -35,14 +34,6 @@ img {
 #welcome {
     margin-top: 3%;
     text-align: center;
-}
-
-.charts {
-    height: 250px;
-    background-color: bisque;
-    margin: 10px 0px 10px 0px;
-    border-radius: 10px; 
-    float: left;  
 }
 
 td, th {
