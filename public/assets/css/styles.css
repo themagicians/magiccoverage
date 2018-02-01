@@ -1,27 +1,30 @@
 body {
     background-color: #48210e;
-    color: #efaa52;
+    color: #9D4B26;
 }
 
 .navbar {
     height:75px;
     background:black;
     width:100%;
-    margin:1px auto;
-    border-color: #bf0000;
+    margin:0px auto;
+    border-color: #bf0000 black #5F89D1 black; /*first border color is red I liked*/
+    border-bottom-width: 3px;
 }
 
 .nav.navbar-nav li a {
-    color: #bf0000;
+    color: white;
+    padding-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
 }
 
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    padding-top: 5px;
+}
 
 img {
 	height:50px;
-}
-
-#searchField {
-    
 }
 
 .jumbotron {
@@ -33,20 +36,36 @@ img {
     text-align: center;
 }
 
-.charts {
-    height: 250px;
-    background-color: bisque;
-    margin: 10px 0px 10px 0px;
-    border-radius: 10px; 
-    float: left;  
-}
-
 td, th {
     padding: 8px;
 }
 
+.chart{
+    color: white;
+    font-size: 20px;
+    text-align: left;
+}
+
 td a {
     color: #bf0000;
+}
+
+#expandButton {
+    background-color: #5F89D1;
+    border-color: #48210e;
+    color: whitesmoke;
+}
+
+.form-control {
+    font-size: 17px;
+    font-weight: bold;
+    color: #5F89D1;
+    background-color: whitesmoke;
+}
+
+#dropdown {
+    color: black;
+    padding-top: 10px;
 }
 
 .footer {

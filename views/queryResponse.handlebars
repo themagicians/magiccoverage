@@ -3,13 +3,19 @@
 <br>
     {{#each events}}
         <div class="jumbotron" id="{{ ID }}">
-            <h2> {{this.event_sponsor}}: {{this.event_name}} </h2> <br>
-            <h3> Date: {{this.event_date}} </h3> <br>
-            <h3> Format: {{this.format}} </h3> <br>
-
-            <div class="table-responsive">
-                {{> table-partial}}
+            <div class="text-center">
+                <h2><b> {{this.event_sponsor}}: {{this.event_name}} </b></h2>
+                <h3> Coverage from {{this.event_date}} | Format: {{this.format}} </h3>
             </div>
+            <br>
+            <div class="text-center">
+                <a class="btn btn-primary" id="expandButton" data-toggle="collapse" href="#{{this.id}}" role="button" aria-expanded="false" aria-controls="{{this.id}}">Click to Expand +</a>
+            </div>
+            <br>
+
+                <div class="table-responsive">
+                    {{> table-partial}}
+                </div>
 
         </div> {{!-- end jumbotron --}}
     {{/each}} {{!-- end #each events --}}

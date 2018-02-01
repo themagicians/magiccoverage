@@ -1,61 +1,38 @@
+
 <br><br>
 <div class="container" id="responseDiv">
-    <div class="jumbotron" id="{{ ID }}">
-        <div class="table-responsive">
-            <table class="table-hover">
-                <thead>
-                    <tr>
-                        <th>Event Name</th>
-                        <th>Event Id</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {{#each events}} 
-                        <tr>
-                            <td>{{ this.event_name }} </td>
-                            <td>{{ this.id }} </td>
-                        </tr>
-                    {{/each}}
-                </tbody>
-            </table> 
-        </div>
-    </div>
-</div>
-
-
-<div class="container">
-    <div class="row">
-        <div class="col-xs-12 enter_section">
-            <h2>Add a Round</h2>
-            <form action="/events/rounds" method="POST">
-                <div class="form-group">
-                    <label for="roundNumber">Round Number</label>
-                        <select class="form-control" name="round_number">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>                                <option>5</option>
-                            <option>6</option>
-                            <option>7</option>
-                            <option>8</option>
-                            <option>9</option>                                <option>10</option>
-                            <option>11</option>
-                            <option>12</option>
-                            <option>13</option>
-                            <option>14</option>                               <option>15</option>
-                            <option>16</option>
-                            <option>17</option>
-                            <option>18</option>
-                            <option>19</option>
-                            <option>20</option>
-                        </select>
-                </div>  
+    <div class="jumbotron">
+            <div class="row">
+                <div class="col-xs-12 enter_section">
+                    <h2><b>Round Form</b></h2><hr>
+                    <form action="/events/rounds" method="POST">
                         <div class="form-group">
-                            <label>Event Name</label>
-                            <input type="text" class="form-control" name="event_name" placeholder="Grab Event Name from List Above" value="" id="event_name">
-                        </div>
+                            <label for="roundNumber"><h4><b>Round Number</h4></b></label>
+                                <select class="form-control" name="round_number">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    <option>6</option>
+                                    <option>7</option>
+                                    <option>8</option>
+                                    <option>9</option>
+                                    <option>10</option>
+                                    <option>11</option>
+                                    <option>12</option>
+                                    <option>13</option>
+                                    <option>14</option>
+                                    <option>15</option>
+                                    <option>16</option>
+                                    <option>17</option>
+                                    <option>18</option>
+                                    <option>19</option>
+                                    <option>20</option>
+                                </select>
+                        </div>  
                         <div class="form-group">
-                            <label>Event ID</label>
+                            <label><h4><b>Event ID</h4></b></label>
                                 <select class="form-control" name="EventId">
                                 {{#each events}}
                                     <option value="{{this.id}}">{{ this.id }} - {{this.event_name}}</option>
@@ -63,29 +40,30 @@
                                 </select>
                         </div>
                         <div class="form-group">
-                            <label>Coverage Link</label>
+                            <label><h4><b>Coverage Link</h4></b></label>
                             <input type="text" class="form-control" name="coverage_link" value="" id="coverage_link">
-                        </div>  
-                        <h3>Player 1</h3>
+                        </div> <br> 
+                        <h3><b>Player</b></h3>
                         <div class="form-group">
-                            <label>Name</label>
+                            <label><h4><b>Name</h4></b></label>
                             <input type="text" class="form-control" name="player1_name" value="" id="player1_name">
                         </div>
                         <div class="form-group">
-                            <label>Deck</label>
+                            <label><h4><b>Deck</h4></b></label>
                             <input type="text" class="form-control" name="player1_deck" value="" id="player1_deck">
                         </div>
-                        <h3>Player 2</h3>
+                        <h3><b>Player</b></h3>
                         <div class="form-group">
-                            <label>Name</label>
+                            <label><h4><b>Name</h4></b></label>
                             <input type="text" class="form-control" name="player2_name" value="" id="player2_name">
                         </div>
                         <div class="form-group">
-                            <label>Deck</label>
+                            <label><h4><b>Deck</h4></b></label>
                             <input type="text" class="form-control" name="player2_deck" value="" id="player2_deck">
-                        </div>        
-                        <button type="submit" class="btn btn-primary" id="submitbutton">Submit</button>
+                        </div> <br>      
+                        <button type="submit" class="btn btn-primary" id="expandButton">Submit</button>
                     </form>
+                </div>
             </div>
         </div>
     </div>

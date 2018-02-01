@@ -15,7 +15,7 @@
     </head>
     <body>
 
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -40,8 +40,8 @@
                 <li class="dropdown navbar-right">
                     <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="/assets/img/MTG_Green_Create.png" class="manaNavLink"><span class="caret"></span></a>
             <ul class="dropdown-menu">
-                <li><a href="/event/form">Create Event</a></li>
-                <li><a href="/round/form">Create Rounds</a></li>
+                <li><a href="/event/form" class="brownLink" id="dropdown">Create Event</a></li>
+                <li><a href="/round/form" class="brownLink" id="dropdown">Create Rounds</a></li>
             </ul>
                 </li>
 {{!--         <li class="dropdown navbar-right">
@@ -62,15 +62,17 @@
         <div class="form-group">
           <input type="text" class="form-control" placeholder="Event Name" id="searchField">
         </div>
-        <button type="submit" class="btn btn-primary">Search</button>
+        <button type="submit" id="expandButton" class="btn btn-default">Search</button>
       </form>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
 
+<hr><hr><hr>
+
     
 
-    <div> {{{ body }}}</div>
+    <div class="container"> {{{ body }}}</div>
 
     
         {{!-- Add in jQuery --}}
@@ -83,6 +85,7 @@
      <div class="footer">
         <a href="https://magic.wizards.com/en"><img alt="Link to Official MTG website" title="Link to Official MTG website" src="/assets/img/MTG_White_Link.png" class="manaFootLink"></a>
         <p>Copyright 2018, The Magicians</p>
+        <!-- Link to satisfy license requirements to use images -->
         <a href="http://hush66.deviantart.com"><img  alt="Link to icon artist" title="Icons courtesy of hush66.deviantart.com" src="/assets/img/MTG_Black_Link.png" class="manaFootLink"></a>
     </div>
     
