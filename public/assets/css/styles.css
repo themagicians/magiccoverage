@@ -43,7 +43,7 @@ td, th {
 .chart{
     color: white;
     font-size: 20px;
-    text-align: left;
+    align: center;
 }
 
 td a {
