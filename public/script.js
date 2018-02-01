@@ -69,6 +69,7 @@ d3.json('/assets/js/data/players3.json', function(error, json) {
     .attr('width', width + margin.left + margin.right)
     .attr('height', height + margin.top + margin.bottom)
     .append('g')
+    
     .attr('transform',
       'translate(' + margin.left + ',' + margin.right + ')')
     
@@ -114,10 +115,10 @@ d3.json('/assets/js/data/players3.json', function(error, json) {
     yGuide = d3.select('#charts1 svg').append('g')
               .attr('transform', 'translate(20,0)')
               .call(yAxisTicks)   
-              .styles({
-                "border":"1px",
-               "border-style":"solid",
-               "border-color":"#f00"})
+              .style("stroke", "#efefef");
+
+    
+              
 
     myChart.transition()
     .attr('height', function(individualPlayer) {
