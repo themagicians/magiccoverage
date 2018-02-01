@@ -28,8 +28,10 @@ router.get("/events", function (req, res) {
 		include: [{model: db.Rounds, as: 'Rounds'}],
 		order: [[ {model: db.Rounds, as: 'Rounds'}, "round_number" ]]
 	}).then(function (dbEvents) {
+		// order dbEvents JSON from last to first item by event 
 		dbEvents.sort(function (a, b){
-			return b.id - a.id
+			var dateA = new Date(a.event_date), dateB = new Date(b.event_date);
+			return dateB - dateA
 		});
 		var hbsObject = {
 				events: dbEvents
