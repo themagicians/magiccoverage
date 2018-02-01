@@ -8,13 +8,13 @@ body {
     background:black;
     width:100%;
     margin:0px auto;
-    border-color: #bf0000 black #5F89D1 black; /*first border color is red I liked*/
+    border-color: #bf0000 black #07889b black; /*first border color is red I liked*/
     border-bottom-width: 3px;
 }
 
 .nav.navbar-nav li a {
-    color: white;
-    padding-top: 10px;
+    color: whitesmoke;
+    padding-top: 21px;
     font-size: 18px;
     font-weight: bold;
 }
@@ -27,6 +27,23 @@ img {
 	height:50px;
 }
 
+#homeLink, #eventsLink, #createButton:link {
+    color: whitesmoke;
+}
+
+#homeLink, #eventsLink, #createButton:visited {
+    color: blanchedalmond;
+}
+
+ul.nav a:hover {
+    color: #bf0000 !important;
+
+}
+
+#createButton:focus {
+    color: #07889b;
+}
+
 .jumbotron {
     background-color: blanchedalmond;
 }
@@ -37,37 +54,58 @@ img {
 }
 
 td, th {
-    padding: 8px;
-}
-
-.chart{
-    color: white;
-    font-size: 20px;
-    align: center;
+    padding: 10px;
 }
 
 td a {
     color: #bf0000;
 }
 
-#expandButton {
-    background-color: #5F89D1;
+.chart{
+    color: whitesmoke;
+    font-size: 20px;
+    align: center;
+}
+
+#twitterFeed {
+    float: right;
+    background-color: blanchedalmond;
+    height: 250px;
+    border-radius: 15px;
+}
+
+.tealButton {
+    background-color: #07889b;
     border-color: #48210e;
     color: whitesmoke;
+}
+
+.tealButton:hover {
+    background-color: #197a88;
+    color: blanchedalmond;
 }
 
 .form-control {
     font-size: 17px;
     font-weight: bold;
-    color: #5F89D1;
+    color: #07889b;
     background-color: whitesmoke;
 }
 
+.dropdown-menu {
+    background-color: blanchedalmond;
+}
+
 #dropdown {
-    color: black;
+    background-color: blanchedalmond;
+    color: #48210e;
     padding-top: 10px;
 }
 
 .footer {
     text-align: center;
+    font-weight: bold;
+}
+.footerRow {
+    margin: auto;
 }
