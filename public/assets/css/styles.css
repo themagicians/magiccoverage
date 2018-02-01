@@ -9,7 +9,7 @@ body {
     width:100%;
     margin:0px auto;
     border-color: black black #5F89D1 black;
-    border-bottom-width: 1px;
+    border-bottom-width: 3px;
 }
 
 .nav.navbar-nav li a {
