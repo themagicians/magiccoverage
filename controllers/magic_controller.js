@@ -10,7 +10,10 @@ router.get("/", function(req, res) {
 
 // API Route to publish All Events
 router.get("/api/events", function(req, res) {
-	db.Events.findAll({}).then(function(dbEvents){
+	db.Events.findAll({
+		include: [{model: db.Rounds, as: 'Rounds'}],
+		order: [[ {model: db.Rounds, as: 'Rounds'}, "round_number" ]]
+	}).then(function(dbEvents){
 		res.json(dbEvents);
 	});
 });
@@ -22,9 +25,14 @@ router.get("/event/form", function(req, res) {
 
 router.get("/events", function (req, res) {
 	db.Events.findAll({
-		include: [db.Rounds],
-		order: [[ db.Rounds, "round_number" ]]
+		include: [{model: db.Rounds, as: 'Rounds'}],
+		order: [[ {model: db.Rounds, as: 'Rounds'}, "round_number" ]]
 	}).then(function (dbEvents) {
+		// order dbEvents JSON from last to first item by event 
+		dbEvents.sort(function (a, b){
+			var dateA = new Date(a.event_date), dateB = new Date(b.event_date);
+			return dateB - dateA
+		});
 		var hbsObject = {
 				events: dbEvents
 			};
