@@ -34,17 +34,15 @@ img {
 #homeLink, #eventsLink, #createButton:visited {
     color: blanchedalmond;
 }
-/*
-#homeLink, #eventsLink, #createButton:hover {
-    color: #bf0000;
 
-}  MY GOAL IS TO GET THESE WORKING PROPERLY!
+ul.nav a:hover {
+    color: #bf0000 !important;
 
-#createButton:active {
-    background-color: black;
-    color: blanchedalmond;
 }
-*/
+
+#createButton:focus {
+    color: #07889b;
+}
 
 .jumbotron {
     background-color: blanchedalmond;
@@ -86,7 +84,6 @@ td a {
     color: #07889b;
     background-color: whitesmoke;
 }
-
 
 .dropdown-menu {
     background-color: blanchedalmond;
