@@ -2,6 +2,7 @@
 <div id="responseDiv">
 <br>
 <br>
+    {{#if events}}
     {{#each events}}
         <div class="jumbotron" id="{{ this.ID }}">
             <div class="text-center">
@@ -20,5 +21,11 @@
 
         </div> {{!-- end jumbotron --}}
     {{/each}} {{!-- end #each events --}}
+    {{else}}
+        <div class="jumbotron" id="sorryScreen">
+            <p>Sorry! We don't seem to have an event by that name yet.</p>
+            <p>Please try your search again or create a new event.</p>
+        </div>
+    {{/if}}
 </div>
 </div>
