@@ -19,7 +19,8 @@
         </script>
 
         <div id="charts1"></div>
-        <div class= "chart">Most Popular Players</div>
+        <div class= "chart">Most Popular Players<p><br></p></div>
+      
 
     
     
@@ -43,7 +44,11 @@
         <button type="submit" id="cardButton" class="btn tealButton">Search</button>
     </form>
     <div id="cardInfo">
+        {{#if cards}}
         {{> cardInfo-partial}}
+        {{else}}
+        {{> cardBlank-partial}}
+        {{/if}}
     </div>
 </div>
 
