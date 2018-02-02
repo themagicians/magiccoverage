@@ -71,12 +71,13 @@ td a {
     align: center;
 }
 
-#twitterFeed {
+#cardInfoSearch {
     float: right;
     background-color: blanchedalmond;
     height: 650px;
     width: 440px;
     border-radius: 5px;
+    text-align: center;
 }
 
 .tealButton {

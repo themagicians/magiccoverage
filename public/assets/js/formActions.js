@@ -12,7 +12,6 @@ $(function() {
         }).then(
             function() {
                 console.log("search successful");
-                //$("#responseDiv").html //?
             }
         ); //.then end
     });  // #searchButton.onClick end
