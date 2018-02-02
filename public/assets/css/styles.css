@@ -74,8 +74,9 @@ td a {
 #twitterFeed {
     float: right;
     background-color: blanchedalmond;
-    height: 250px;
-    border-radius: 1px;
+    height: 650px;
+    width: 440px;
+    border-radius: 5px;
 }
 
 .tealButton {
