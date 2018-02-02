@@ -208,6 +208,16 @@ var fixtures = [
             "coverage_link": "https://www.twitch.tv/videos/152114515?t=0h04m52s",
             "EventId": 3
         }
+    },
+    {
+        "model": "Events",
+        "data": {
+            "coverage_provider": "Twitch",
+            "event_sponsor": "Star City Games",
+            "event_name": "SCG Open: Atlanta",
+            "event_date": "2018-02-03",
+            "format": "Legacy"
+        }
     }
     
 ];

@@ -22,6 +22,21 @@ router.get("/event/form", function(req, res) {
 	res.render("eventForm");
 });
 
+router.get("/event/search", function(req, res) {
+	var mytext = req.query.mytext
+	db.Events.findAll({
+		where: {
+			event_name: req.query.mytext
+		},
+		include: [db.Rounds]
+	}).then(function(dbEvent) {
+		var hbsObject = {
+			events: dbEvent
+		};
+		console.log(hbsObject);
+		res.render("searchQuery", hbsObject);
+	});
+});
 
 router.get("/events", function (req, res) {
 	db.Events.findAll({
