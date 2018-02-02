@@ -4,6 +4,33 @@ var router = express.Router();
 
 var db = require("../models");
 
+// Require Request
+var request = require("request");
+
+// Require for Magic Card Search 
+const mtg = require("mtgsdk");
+
+// Magic Card Search Route
+router.get("/card/:card", function(req, res){
+	// Store incoming card name
+	var cardQuery = req.params.card;
+	// API for magic card lookup
+	var magicCardSearchURL = "https://api.magicthegathering.io/v1/cards?name="+cardQuery;
+	// Make Request to API
+	request(magicCardSearchURL, function(error, response, body){
+		if (!error && response.statusCode === 200){
+			console.log("This is the Body");
+			console.log(body);
+			var jsonData = JSON.parse(body);
+
+			// Body comes back as JSON data card is an array of card matches and .name is the card name at that index
+			console.log(jsonData.cards[0].name);
+
+		};
+	});
+
+});
+
 router.get("/", function(req, res) {
 	res.render("index");
 });
