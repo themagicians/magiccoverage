@@ -34,8 +34,17 @@
         <div class= "chart">Most Popular Decks</div>
 </div>
 
-<div class="col-s-6" id="twitterFeed">
-    <p>Congratulations! This worked!</p>
+<div class="col-s-6" id="cardInfoSearch">
+    <form action="/cards/nameofacard" method="GET" class="navbar-form">
+        <div class="form-group">
+            <input type="text" name="card" class="form-control" placeholder="Card Name" id="cardSearch">
+        </div>
+        <br>
+        <button type="submit" id="cardButton" class="btn tealButton">Search</button>
+    </form>
+    <div id="cardInfo">
+        {{> cardInfo-partial}}
+    </div>
 </div>
 
 
