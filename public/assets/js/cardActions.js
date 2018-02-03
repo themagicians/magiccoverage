@@ -7,7 +7,7 @@ $(function() {
             card: $("#cardSearch").val().trim()
         }
 
-        $.ajax("/cards/params", {
+        $.ajax("/card/:card", {
             type: "GET",
             data: cardQuery
         }).then(
